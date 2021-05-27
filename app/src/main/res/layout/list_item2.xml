@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cView2"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#008FA5"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="139dp">
+
+        <ImageView
+            android:id="@+id/track_imageview"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+             />
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/track_imageview"
+            android:text="Track Name"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nationality_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_textview"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/track_imageview"
+            android:text="Track Location"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/details_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nationality_textview"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="143dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/track_imageview"
+            android:paddingTop="80dp"
+            android:text="Track Details"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

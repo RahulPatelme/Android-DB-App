@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTracks"
+    android:orientation="vertical"
+    android:background="#D7FFEF"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Track Information"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="524dp"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:id="@+id/tracksrcImage"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/f1tracks" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tracksrcImage"
+            android:layout_alignStart="@+id/tracksrcImage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="6dp"
+            android:text="Track's Image"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tracksrcImage"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="304dp"
+            android:backgroundTint="#008FA5"
+            android:onClick="onAddButtonClick"
+            android:text="Save Info" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/tracksrcImage"
+            android:layout_toRightOf="@+id/btnSave"
+            android:hint="Track Name"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textColorHint="#6A6A6A"
+            android:textSize="22sp"
+             />
+
+        <EditText
+            android:id="@+id/editNationality"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editName"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/tracksrcImage"
+            android:hint="Track Location"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textColorHint="#6A6A6A"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/editDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editNationality"
+            android:layout_marginTop="68dp"
+            android:hint="Track Details"
+            android:textColor="@color/black"
+            android:maxLength="140"
+            android:textSize="22sp"
+            android:textColorHint="#6A6A6A"/>
+
+        <Button
+            android:id="@+id/cancelInput"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnSave"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="40dp"
+            android:layout_toEndOf="@+id/btnSave"
+            android:backgroundTint="#008FA5"
+            android:text="Cancel" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cView2"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="446dp">
+
+
+        <ImageView
+            android:id="@+id/image_details"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-1dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/name_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/image_details"
+            android:text="Tracks"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nationality_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_details"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/image_details"
+            android:text="Location"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/details_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nationality_details"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-76dp"
+            android:layout_marginTop="77dp"
+            android:layout_toRightOf="@+id/image_details"
+            android:maxLength="140"
+            android:text="Track Details"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_details"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#008FA5"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/cancelInput"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_edit"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/btn_edit"
+            android:backgroundTint="#008FA5"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/dltBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_edit"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/btn_edit"
+            android:backgroundTint="#008FA5"
+            android:text="Delete" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

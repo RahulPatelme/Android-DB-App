@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:textAlignment="viewEnd"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".LaunchActivity"><![CDATA[
+    >
+
+
+
+
+
+    ]]>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignStart="@+id/input_group"
+        android:layout_alignEnd="@+id/input_group"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="1dp"
+        app:srcCompat="@drawable/f1logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="361dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/input_group"
+        android:layout_alignEnd="@+id/input_group"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="1dp"
+        android:text="Welcome to F1 Android App"
+        android:textAllCaps="true"
+        android:textColor="#FF1801"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/input_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="370dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get info about: "
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Drivers, Teams, and Tracks"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#008FA5"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Access Your F1 Hub"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

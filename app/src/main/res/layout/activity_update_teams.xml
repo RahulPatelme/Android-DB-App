@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".UpdateTeamsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Update Teams Information"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:id="@+id/updateteamImage"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/f1teams" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updateteamImage"
+            android:layout_alignStart="@+id/updateteamImage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="6dp"
+            android:text="P4Image"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+
+        <EditText
+            android:id="@+id/updateName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/updateteamImage"
+            android:layout_toRightOf="@+id/btnUpdate"
+            android:hint="Team Name"
+            android:textColorHint="@color/black"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/updateNationality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updateName"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/updateteamImage"
+            android:hint="Team Nationality"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:lines="1"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/updateDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updateNationality"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="40dp"
+            android:hint="Team Details"
+            android:maxLength="140"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/updateDetails"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#008FA5"
+            android:text="Update Info" />
+
+        <Button
+            android:id="@+id/btncancelUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/updateDetails"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/btnUpdate"
+            android:backgroundTint="#008FA5"
+            android:text="Cancel" />
+
+
+    </RelativeLayout>
+</LinearLayout>
